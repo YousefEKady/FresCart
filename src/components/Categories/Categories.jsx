@@ -51,15 +51,17 @@ export default function Categories() {
 
   return (
     <div className='my-5'>
-      <h4>Shop Popular Categories</h4>
-      <Slider {...settings}>
-        {category.map(item => (
-          <div key={item._id} className="slider-item">
-            <img src={item.image} className='w-100' alt={item.name} height="150px" />
-            <h6 className='my-2'>{item.name}</h6>
-          </div>
-        ))}
-      </Slider>
+      <div className="container">
+        <h4>Shop Popular Categories</h4>
+        <Slider {...settings}>
+          {category.map(item => (
+            <div key={item._id} className="slider-item">
+              <img src={item.image} className='w-100' alt={item.name} height="150px" />
+              <h6 className='my-2'>{item.name}</h6>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 }

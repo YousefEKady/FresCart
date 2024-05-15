@@ -5,7 +5,7 @@ import AllProducts from '../Products/AllProducts'
 
 export default function Home() {
   return (
-    <div className='container my-2'>
+    <div className='my-2'>
       <Carousel />
       <Categories />
       <AllProducts />

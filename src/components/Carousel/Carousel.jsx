@@ -40,16 +40,18 @@ export default function Carousel() {
         ]
     };
     return (
-        <Slider {...settings}>
-            <div>
-                <img src={img1} alt='' className='w-100' />
-            </div>
-            <div>
-                <img src={img2} alt='' className='w-100' />
-            </div>
-            <div>
-                <img src={img3} alt='' className='w-100' />
-            </div>
-        </Slider>
+        <div className="container">
+            <Slider {...settings}>
+                <div>
+                    <img src={img1} alt='' className='w-100' />
+                </div>
+                <div>
+                    <img src={img2} alt='' className='w-100' />
+                </div>
+                <div>
+                    <img src={img3} alt='' className='w-100' />
+                </div>
+            </Slider>
+        </div>
     );
 }
